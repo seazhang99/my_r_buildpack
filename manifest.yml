@@ -1,0 +1,30 @@
+---
+language: r
+default_versions:
+dependencies:
+- name: r
+  version: 2.15.1
+  uri: https://cran.r-project.org/src/base/R-2/R-2.15.1.tar.gz
+  sha256: 96e4baea9dc7653b9160d7f2e1d321d0f252fee37ceb4273d4c94f0d4d815485 
+  cf_stacks:
+  - cflinuxfs3
+  source: https://heroku-buildpack-r.s3.amazonaws.com/cedar/R-2.15.1-binaries-20131211-0028.tar.gz
+  source_sha256: e53d8c3cf20f2b8d7a9c1631b6f6a22874506fb392034758b3bb341c586c5b62
+  dependencies:
+  - name: forecast
+    source: https://cran.cnr.berkeley.edu/src/contrib/forecast_8.10.tar.gz
+    source_sha256: 798e15d15be9af0b8f505e826db83d5f09d7a7434567ec291a31eaf3b8c88c49
+    version: "8.10"
+  - name: plumber
+    source: https://cran.cnr.berkeley.edu/src/contrib/plumber_0.4.6.tar.gz
+    source_sha256: 878417c99f00f0c5e163217714eeb87a2a6bd7561417c3dc5a51784ab5cfb7b0
+    version: 0.4.6
+  - name: rserve
+    source: https://cran.cnr.berkeley.edu/src/contrib/Rserve_1.7-3.tar.gz
+    source_sha256: 23ef72b7ab4f78b7ed1311f9f4d5a961f2fecc7cfc6996473f54e7d6ca7428c8
+    version: 1.7.3.1
+  - name: shiny
+    source: https://cran.cnr.berkeley.edu/src/contrib/shiny_1.4.0.tar.gz
+    source_sha256: 0c070459387cea98ca7c6df7318370116df42afb5f76a8625eb4f5b681ee6c4b
+    version: 1.4.0
+
